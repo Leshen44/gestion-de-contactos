@@ -5,7 +5,7 @@ from contactos.actualizar import *
 from contactos.eliminar import *
 
 def menu():
-    input("Presione enter")
+    input("Presione enter \n")
     print("Bienvenido al menu \n")
     print("[1]. Agregar contacto \n")
     print("[2]. Buscar contacto \n")
@@ -20,6 +20,7 @@ def menu():
         nombre = input("Ingrese el nombre \n")
         correo = input("Ingrese el correo \n")
         agregar_contacto(nombre, correo)
+        print("Los contactos actualizados son: \n")
         mostrar_contacto()
         menu()
     elif opc == 2:
@@ -29,6 +30,7 @@ def menu():
         menu()
     elif opc == 3:
         print("Bienvenido al menu de mostrar \n")
+        print("Los contactos registrados son: \n")
         mostrar_contacto()
         menu()
     elif opc == 4:
