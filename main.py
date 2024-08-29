@@ -40,6 +40,7 @@ def menu():
         actualizar_contacto(indice,nombre, correo)
         menu()
     else:
+        print("Gracias por usar el programa \n")
         exit()
 
 
