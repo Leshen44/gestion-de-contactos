@@ -4,7 +4,6 @@ from contactos.mostrar import *
 from contactos.actualizar import *
 from contactos.eliminar import *
 
-
 def menu():
     input("Presione enter")
     print("Bienvenido al menu \n")
