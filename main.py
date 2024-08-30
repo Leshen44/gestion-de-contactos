@@ -29,8 +29,12 @@ def menu():
         nombre = input("Ingrese el nombre \n")
         coincidencia=[]
         coincidencia =buscar_contacto(nombre)
-        for i in coincidencia:
-            print(f"Los Contactos encontrados son {i}")
+        print("Contactos encontrados")
+        if coincidencia ==[]:
+            print("No se encontraron coincidencias")
+        else:
+            for i in coincidencia:
+                print(f" {i[0]} - {i[1]}")
         menu()
     elif opc == 3:
         print("Bienvenido al menú de mostrar \n")
@@ -54,6 +58,5 @@ def menu():
     else:
         print("Gracias por usar el programa \n")
         exit()
-
 
 menu()
