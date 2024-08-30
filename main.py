@@ -34,7 +34,7 @@ def menu():
             print("No se encontraron coincidencias")
         else:
             for i in coincidencia:
-                print(f" {i[0]} - {i[1]}")
+                print(f"Nombre: {i[0]}, Email: {i[1]}")
         menu()
     elif opc == 3:
         print("Bienvenido al menú de mostrar \n")
