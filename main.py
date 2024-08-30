@@ -23,7 +23,7 @@ def menu():
         agregar_contacto(nombre, correo)
         print("Los contactos actualizados son: \n")
         mostrar_contacto()
-        menu()
+        
     elif opc == 2:
         print("Bienvenido al menú de búsqueda \n")
         nombre = input("Ingrese el nombre \n")
@@ -35,12 +35,12 @@ def menu():
         else:
             for i in coincidencia:
                 print(f"Nombre: {i[0]}, Email: {i[1]}")
-        menu()
+        
     elif opc == 3:
         print("Bienvenido al menú de mostrar \n")
         print("Los contactos registrados son: \n")
         mostrar_contacto()
-        menu()
+        
     elif opc == 4:
         print("Bienvenido al menú de actualizar \n")
         mostrar_contacto()
@@ -48,7 +48,7 @@ def menu():
         nombre = input("Ingrese el nuevo nombre \n")
         correo = input("Ingrese el nuevo correo \n")
         actualizar_contacto(indice, nombre, correo)
-        menu()
+        
     elif opc == 5:
         print("Bienvenido al menú de eliminar \n")
         mostrar_contacto()
@@ -58,5 +58,5 @@ def menu():
     else:
         print("Gracias por usar el programa \n")
         exit()
-
+    menu()
 menu()
