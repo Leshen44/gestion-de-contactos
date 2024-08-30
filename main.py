@@ -27,7 +27,10 @@ def menu():
     elif opc == 2:
         print("Bienvenido al menú de búsqueda \n")
         nombre = input("Ingrese el nombre \n")
-        buscar_contacto(nombre)
+        coincidencia=[]
+        coincidencia =buscar_contacto(nombre)
+        for i in coincidencia:
+            print(f"Los Contactos encontrados son {i}")
         menu()
     elif opc == 3:
         print("Bienvenido al menú de mostrar \n")
